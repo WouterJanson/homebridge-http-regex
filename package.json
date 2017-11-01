@@ -1,0 +1,28 @@
+{
+  "name": "homebridge-http-regex",
+  "version": "0.0.1",
+  "description": "Regex http plugin for Homebridge: https://github.com/nfarina/homebridge",
+  "license": "MIT",
+  "author": {
+    "name": "Wouter Janson"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "homekit",
+    "regex"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wouterjanson/homebridge-http-regex.git"
+  },
+  "bugs": {
+    "url": "http://github.com/wouterjanson/homebridge-http-regex/issues"
+  },
+  "engines": {
+    "node": "^6.11.4 || ^8.7.0",
+    "homebridge": "^0.4.29"
+  },
+  "dependencies": {
+    "request": "2.49.x"
+  }
+}
