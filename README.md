@@ -1,4 +1,7 @@
 # homebridge-http-regex
+[![GitHub issues](https://img.shields.io/github/issues/WouterJanson/homebridge-http-regex.svg)](https://github.com/WouterJanson/homebridge-http-regex/issues)
+[![license](https://img.shields.io/github/license/WouterJanson/homebridge-http-regex.svg)](https://github.com/WouterJanson/homebridge-http-regex/blob/master/LICENCE)
+
 HTTP RegEx plugin for [HomeBridge](https://github.com/nfarina/homebridge)
 
 Plugin for Homebridge which checks a HTTP response against a RegEx pattern. It creates a contact sensor which opens when RegEx pattern is matched against the HTTP response.
