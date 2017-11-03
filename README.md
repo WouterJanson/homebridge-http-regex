@@ -34,6 +34,6 @@ You'll need to add a `Regex` accessory to your homebridge config.json. This exam
 `name`: The name of the contact sensor in HomeKit.  
 `endpoint`: The addres for the HTTP Get request.  
 `Pattern`: The RegEx pattern which needs te be checked against.  
-`interval`: The interval between checks in milliseconds.  
+`interval`: The interval between checks in milliseconds. The default is set to `10 seconds` if you don't specify an interval.  
 
 **Note:** You'll need to obmit the opening and closing slash from the pattern. Backslashes within the pattern need to be escaped with another backslash.
