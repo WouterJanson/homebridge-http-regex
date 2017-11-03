@@ -13,7 +13,7 @@ function RegexAccessory(log, config) {
     this.name = config["name"];
     this.endpoint = config["endpoint"]
     this.regex = new RegExp(config["pattern"])
-    this.interval = config["interval"]
+    this.interval = config["interval"] || 10000 // Ten second default interval
 
     // Internal
     this.log = log;
