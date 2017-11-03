@@ -32,7 +32,7 @@ You'll need to add a `Regex` accessory to your homebridge config.json. This exam
 ### Value summary
 `accessory`: The name of the accessory, this must be `Regex`.  
 `name`: The name of the contact sensor in HomeKit.  
-`endpoint`: The addres for the HTTP Get request.  
+`endpoint`: The address for the HTTP Get request.  
 `Pattern`: The RegEx pattern which needs te be checked against.  
 `interval`: The interval between checks in milliseconds. The default is set to `10 seconds` if you don't specify an interval.  
 
