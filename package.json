@@ -1,6 +1,6 @@
 {
   "name": "homebridge-http-regex",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Regex http plugin for Homebridge: https://github.com/nfarina/homebridge",
   "license": "MIT",
   "author": {
