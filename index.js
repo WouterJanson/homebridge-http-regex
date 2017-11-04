@@ -25,6 +25,11 @@ function RegexAccessory(log, config) {
 }
 
 RegexAccessory.prototype.updateState = function() {
+    if (this.url == null){
+        this.log(`ERROR: No endpoint URL provided`)
+        this.error = true
+        return
+    }
     // Clean any possible previous error
     this.error = false
 
