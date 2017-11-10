@@ -28,17 +28,18 @@ RegexAccessory.prototype.updateState = function() {
     // Clean any possible previous error
     this.error = false
 
-    this.log(`Sending GET request to: ${this.endpoint}`)
+    this.log(`Sending GET request to ${this.endpoint} and test against ${this.regex}`)
     request.get({
         url: this.endpoint
     }, function(err, response, body) {
         if (!err && response.statusCode == 200) {
-            this.log(`Testing response body with RegEx: ${this.regex}`)
-            this.state = this.regex.test(body)
-            this.log(`Setting sensor state: ${this.state}`)
-
-            // Set the current for HomeKit
-            this.service.setCharacteristic(Characteristic.ContactSensorState, this.state)
+            var tempState = this.regex.test(body)
+            if (this.state != tempState){
+                // Set the current for HomeKit
+                this.state = tempState
+                this.log(`Setting sensor state: ${this.state}`)
+                this.service.setCharacteristic(Characteristic.ContactSensorState, this.state)
+            }
         } else {
             this.log(`Error while performing GET request: ${err}`)
             this.error = true
